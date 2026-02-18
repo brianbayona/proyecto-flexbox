@@ -1,0 +1,11 @@
+/* Bloque Principal */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  /* Separa el logo del menú */
+  align-items: center;
+  /* Centrado vertical */
+  padding: 1rem 2rem;
+  background-color: #2d3436;
+  color: white;
+}
