@@ -16,3 +16,11 @@
   text-decoration: none;
   color: #00cec9;
 }
+
+.navbar__menu {
+  display: flex;
+  /* Distribución horizontal de los items */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
