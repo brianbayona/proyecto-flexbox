@@ -9,3 +9,10 @@
   background-color: #2d3436;
   color: white;
 }
+
+.navbar__logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #00cec9;
+}
