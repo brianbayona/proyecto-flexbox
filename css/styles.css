@@ -39,3 +39,22 @@
   font-weight: bold;
   border-bottom: 2px solid #00cec9;
 }
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  /* Apilado vertical */
+  width: 300px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+  background-color: #fff;
+}
+
+.product-card__image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
