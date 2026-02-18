@@ -86,11 +86,8 @@
   margin-bottom: 1rem;
 }
 
-/* Elemento Botón: Empujado hacia abajo */
 .product-card__button {
   margin-top: auto;
-  /* Truco de Flexbox para empujar el botón al final */
-  padding: 0.8rem;
   background-color: #3498db;
   color: white;
   border: none;
