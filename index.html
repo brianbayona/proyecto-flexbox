@@ -4,12 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Flexbox Project</title>
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
   <h1>Flexbox Project</h1>
+
+  <!-- Punto 1 – Barra de navegación -->
   <nav class="navbar">
     <div class="navbar__logo">
       <a href="#">BrandLogo</a>
@@ -22,11 +24,12 @@
       <li class="navbar__item"><a href="#" class="navbar__link navbar__link--active">Contacto</a></li>
     </ul>
   </nav>
+
+  <!-- Punto 2 – Tarjeta de producto -->
   <article class="product-card">
     <div class="product-card__image-container">
       <img src="/imagenes/high-angle-photo-camera-indoors-still-life.jpg" alt="camara PRO" class="product-card__image">
     </div>
-
     <div class="product-card__content">
       <h3 class="product-card__title">Cámara Reflex Pro</h3>
       <p class="product-card__description">
@@ -36,50 +39,77 @@
       <button class="product-card__button">Añadir al carrito</button>
     </div>
   </article>
-</body>
-<section class="gallery">
-  <div class="gallery__item">
-    <img src="/imagenes/solhaugfoto-camera-5716510_1280.jpg" alt="camara retro" class="gallery__img">
-  </div>
-  <div class="gallery__item">
-    <img src="/imagenes/top-view-photo-camera-indoors-still-life.jpg" alt="equipo de fotografía" class="gallery__img">
-  </div>
-  <div class="gallery__item">
-    <img src="/imagenes/jdblack-camera-5887970_1280.jpg" alt="camara retro" class="gallery__img">
-  </div>
-  <div class="gallery__item gallery__item--wide">
-    <img src="/imagenes/qiye-lens-190972_1280.jpg" alt="Lente profesional" class="gallery__img">
-  </div>
-</section>
-<form class="contact-form">
-  <h2 class="contact-form__title">Envíanos un mensaje</h2>
 
-  <div class="contact-form__row">
-    <div class="contact-form__group">
-      <label class="contact-form__label" for="nombre">Nombre</label>
-      <input class="contact-form__input" type="text" id="nombre" placeholder="Ej. Juan">
+  <!-- Punto 3 – Galería -->
+  <section class="gallery">
+    <div class="gallery__item">
+      <img src="/imagenes/solhaugfoto-camera-5716510_1280.jpg" alt="camara retro" class="gallery__img">
     </div>
-    <div class="contact-form__group">
-      <label class="contact-form__label" for="apellido">Apellido</label>
-      <input class="contact-form__input" type="text" id="apellido" placeholder="Ej. Pérez">
+    <div class="gallery__item">
+      <img src="/imagenes/top-view-photo-camera-indoors-still-life.jpg" alt="equipo de fotografía" class="gallery__img">
     </div>
-  </div>
+    <div class="gallery__item">
+      <img src="/imagenes/jdblack-camera-5887970_1280.jpg" alt="camara retro" class="gallery__img">
+    </div>
+    <div class="gallery__item gallery__item--wide">
+      <img src="/imagenes/qiye-lens-190972_1280.jpg" alt="Lente profesional" class="gallery__img">
+    </div>
+  </section>
 
-  <div class="contact-form__group">
-    <label class="contact-form__label" for="email">Correo Electrónico</label>
-    <input class="contact-form__input" type="email" id="email" placeholder="correo@ejemplo.com">
-  </div>
+  <!-- Punto 4 – Formulario de contacto -->
+  <form class="contact-form">
+    <h2 class="contact-form__title">Envíanos un mensaje</h2>
 
-  <div class="contact-form__group">
-    <label class="contact-form__label" for="mensaje">Mensaje</label>
-    <textarea class="contact-form__textarea" id="mensaje" rows="4"></textarea>
-  </div>
+    <div class="contact-form__row">
+      <div class="contact-form__group">
+        <label class="contact-form__label" for="nombre">Nombre</label>
+        <input class="contact-form__input" type="text" id="nombre" placeholder="Ej. Juan">
+      </div>
+      <div class="contact-form__group">
+        <label class="contact-form__label" for="apellido">Apellido</label>
+        <input class="contact-form__input" type="text" id="apellido" placeholder="Ej. Pérez">
+      </div>
+    </div>
 
-  <button class="contact-form__button" type="submit">Enviar Formulario</button>
-</form>
+    <div class="contact-form__group">
+      <label class="contact-form__label" for="email">Correo Electrónico</label>
+      <input class="contact-form__input" type="email" id="email" placeholder="correo@ejemplo.com">
+    </div>
 
-<body>
+    <div class="contact-form__group">
+      <label class="contact-form__label" for="mensaje">Mensaje</label>
+      <textarea class="contact-form__textarea" id="mensaje" rows="4"></textarea>
+    </div>
 
+    <button class="contact-form__button" type="submit">Enviar Formulario</button>
+  </form>
+
+  <!-- Punto 5 – Encabezado de sección -->
+  <section class="section-header">
+    <div class="section-header__icon">
+      <img src="imagenes/pexels-delot-15127741.jpg" alt="Icono de sección">
+    </div>
+    <h2 class="section-header__title">Nuestra Sección</h2>
+  </section>
+
+  <!-- Punto 6 – Lista de tareas -->
+  <ul class="task-list">
+  <li class="task-list__item">Limpiar lentes de la cámara</li>
+  <li class="task-list__item">Revisar batería y memoria</li>
+  <li class="task-list__item">Configurar ajustes de exposición</li>
+  <li class="task-list__item">Empacar cámara para sesión</li>
+  </ul>
+  
+  <!-- Punto 7 – Testimonial -->
+  <section class="testimonial">
+    <div class="testimonial__avatar">
+      <img src="imagenes/pexels-pixabay-206501.jpg" alt="Avatar de cliente">
+    </div>
+    <div class="testimonial__content">
+      <p class="testimonial__text">"Excelente servicio y productos de alta calidad."</p>
+      <span class="testimonial__author">– Juan Pérez</span>
+    </div>
+  </section>
 </body>
 
 </html>
