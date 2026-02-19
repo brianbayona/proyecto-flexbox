@@ -1,0 +1,204 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #2d3436;
+  color: white;
+}
+
+.navbar__logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #00cec9;
+}
+
+.navbar__menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__item {
+  margin-left: 1.5rem;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: #dfe6e9;
+  transition: color 0.3s ease;
+}
+
+.navbar__link:hover {
+  color: #00cec9;
+}
+
+.navbar__link--active {
+  font-weight: bold;
+  border-bottom: 2px solid #00cec9;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  /* Apilado vertical */
+  width: 300px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+  background-color: #fff;
+}
+
+.product-card__image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.product-card__content {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  flex-grow: 1;
+}
+
+.product-card__title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.product-card__description {
+  margin: 0 0 1rem 0;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+.product-card__price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2ecc71;
+  margin-bottom: 1rem;
+}
+
+.product-card__button {
+  margin-top: auto;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.product-card__button:hover {
+  background-color: #2980b9;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  background-color: #f4f4f4;
+}
+
+.gallery__item {
+  height: 200px;
+  flex-grow: 1;
+  flex-basis: 250px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.gallery__img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.gallery__item--wide {
+  flex-grow: 2;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-form__title {
+  margin-bottom: 1.5rem;
+  color: #2d3436;
+}
+
+.contact-form__row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.contact-form__group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 1.2rem;
+}
+
+.contact-form__label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #636e72;
+  font-size: 0.9rem;
+}
+
+.contact-form__input,
+.contact-form__textarea {
+  padding: 0.8rem;
+  border: 1px solid #dfe6e9;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.contact-form__input:focus,
+.contact-form__textarea:focus {
+  border-color: #0984e3;
+}
+
+.contact-form__button {
+  align-self: flex-start;
+  padding: 0.8rem 2rem;
+  background-color: #0984e3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form__button:hover {
+  background-color: #074b83;
+}

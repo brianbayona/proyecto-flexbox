@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+  <h1>Flexbox Project</h1>
+  <nav class="navbar">
+    <div class="navbar__logo">
+      <a href="#">BrandLogo</a>
+    </div>
+
+    <ul class="navbar__menu">
+      <li class="navbar__item"><a href="#" class="navbar__link">Inicio</a></li>
+      <li class="navbar__item"><a href="#" class="navbar__link">Servicios</a></li>
+      <li class="navbar__item"><a href="#" class="navbar__link">Proyectos</a></li>
+      <li class="navbar__item"><a href="#" class="navbar__link navbar__link--active">Contacto</a></li>
+    </ul>
+  </nav>
+  <article class="product-card">
+    <div class="product-card__image-container">
+      <img src="/imagenes/high-angle-photo-camera-indoors-still-life.jpg" alt="camara PRO" class="product-card__image">
+    </div>
+
+    <div class="product-card__content">
+      <h3 class="product-card__title">Cámara Reflex Pro</h3>
+      <p class="product-card__description">
+        Captura momentos inolvidables con la mejor resolución del mercado y lente intercambiable.
+      </p>
+      <span class="product-card__price">$599.00</span>
+      <button class="product-card__button">Añadir al carrito</button>
+    </div>
+  </article>
+</body>
+<section class="gallery">
+  <div class="gallery__item">
+    <img src="/imagenes/solhaugfoto-camera-5716510_1280.jpg" alt="camara retro" class="gallery__img">
+  </div>
+  <div class="gallery__item">
+    <img src="/imagenes/top-view-photo-camera-indoors-still-life.jpg" alt="equipo de fotografía" class="gallery__img">
+  </div>
+  <div class="gallery__item">
+    <img src="/imagenes/jdblack-camera-5887970_1280.jpg" alt="camara retro" class="gallery__img">
+  </div>
+  <div class="gallery__item gallery__item--wide">
+    <img src="/imagenes/qiye-lens-190972_1280.jpg" alt="Lente profesional" class="gallery__img">
+  </div>
+</section>
+<form class="contact-form">
+  <h2 class="contact-form__title">Envíanos un mensaje</h2>
+
+  <div class="contact-form__row">
+    <div class="contact-form__group">
+      <label class="contact-form__label" for="nombre">Nombre</label>
+      <input class="contact-form__input" type="text" id="nombre" placeholder="Ej. Juan">
+    </div>
+    <div class="contact-form__group">
+      <label class="contact-form__label" for="apellido">Apellido</label>
+      <input class="contact-form__input" type="text" id="apellido" placeholder="Ej. Pérez">
+    </div>
+  </div>
+
+  <div class="contact-form__group">
+    <label class="contact-form__label" for="email">Correo Electrónico</label>
+    <input class="contact-form__input" type="email" id="email" placeholder="correo@ejemplo.com">
+  </div>
+
+  <div class="contact-form__group">
+    <label class="contact-form__label" for="mensaje">Mensaje</label>
+    <textarea class="contact-form__textarea" id="mensaje" rows="4"></textarea>
+  </div>
+
+  <button class="contact-form__button" type="submit">Enviar Formulario</button>
+</form>
+
+<body>
+
+</body>
+
+</html>
