@@ -275,3 +275,125 @@
   font-weight: bold;
   color: #0984e3;
 }
+/* 1. Estilos generales (Reset) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  /* Fuente del sistema, limpia y rápida */
+}
+
+/* 2. El Contenedor Flexbox */
+.layout {
+  display: flex;
+  /* Esto pone el sidebar y el contenido uno al lado del otro */
+  min-height: 80vh;
+  /* Altura mínima para que no se vea vacío */
+}
+
+/* 3. Barra lateral (Sidebar) */
+.sidebar {
+  width: 200px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar a {
+  display: block;
+  /* Hace que cada link ocupe toda la línea */
+  text-decoration: none;
+  color: #333;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.sidebar a:hover {
+  color: #007bff;
+  /* Color azul al pasar el ratón */
+}
+
+/* 4. Contenido Principal */
+.sidebar-content {
+  flex: 1;
+  /* Esto hace que use TODO el espacio restante */
+  padding: 40px;
+}
+
+/* 5. Footer (Pie de página) */
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 40px 20px;
+  display: flex;
+  /* Los tres bloques del footer se ponen en fila */
+  justify-content: space-around;
+  /* Espacio igual entre columnas */
+  text-align: center;
+}
+
+.footer__column {
+  flex: 1;
+}
+
+.footer__links a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 5px }
+  /* agrego precios y apartado de rpecios*/
+    /* --- Estilos Súper Básicos de Precios --- */
+  
+    /* Contenedor principal con Flexbox */
+    .pricing__container {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 20px;
+    }
+  
+    /* Caja de cada cámara */
+    .pricing__card {
+      border: 1px solid #000;
+      /* Borde negro simple */
+      width: 250px;
+      padding: 15px;
+      text-align: center;
+      background-color: white;
+    }
+  
+    /* Ajuste de las imágenes */
+    .pricing__img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+  
+    /* Lista de características sin puntos */
+    .pricing__list {
+      list-style: none;
+      padding: 0;
+      margin: 15px 0;
+    }
+  
+    .pricing__item {
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+  
+    /* Botón estilo bloque */
+    .pricing__button {
+      display: block;
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  
+    /* Diferenciador para la tarjeta destacada */
+    .pricing__card--featured {
+      background-color: #f0f0f0;
+      border: 2px solid blue;
+    }
