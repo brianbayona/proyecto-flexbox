@@ -16,7 +16,6 @@
     <div class="navbar__logo">
       <a href="#">BrandLogo</a>
     </div>
-
     <ul class="navbar__menu">
       <li class="navbar__item"><a href="#" class="navbar__link">Inicio</a></li>
       <li class="navbar__item"><a href="#" class="navbar__link">Servicios</a></li>
@@ -59,7 +58,6 @@
   <!-- Punto 4 – Formulario de contacto -->
   <form class="contact-form">
     <h2 class="contact-form__title">Envíanos un mensaje</h2>
-
     <div class="contact-form__row">
       <div class="contact-form__group">
         <label class="contact-form__label" for="nombre">Nombre</label>
@@ -70,17 +68,14 @@
         <input class="contact-form__input" type="text" id="apellido" placeholder="Ej. Pérez">
       </div>
     </div>
-
     <div class="contact-form__group">
       <label class="contact-form__label" for="email">Correo Electrónico</label>
       <input class="contact-form__input" type="email" id="email" placeholder="correo@ejemplo.com">
     </div>
-
     <div class="contact-form__group">
       <label class="contact-form__label" for="mensaje">Mensaje</label>
       <textarea class="contact-form__textarea" id="mensaje" rows="4"></textarea>
     </div>
-
     <button class="contact-form__button" type="submit">Enviar Formulario</button>
   </form>
 
@@ -94,12 +89,12 @@
 
   <!-- Punto 6 – Lista de tareas -->
   <ul class="task-list">
-  <li class="task-list__item">Limpiar lentes de la cámara</li>
-  <li class="task-list__item">Revisar batería y memoria</li>
-  <li class="task-list__item">Configurar ajustes de exposición</li>
-  <li class="task-list__item">Empacar cámara para sesión</li>
+    <li class="task-list__item">Limpiar lentes de la cámara</li>
+    <li class="task-list__item">Revisar batería y memoria</li>
+    <li class="task-list__item">Configurar ajustes de exposición</li>
+    <li class="task-list__item">Empacar cámara para sesión</li>
   </ul>
-  
+
   <!-- Punto 7 – Testimonial -->
   <section class="testimonial">
     <div class="testimonial__avatar">
@@ -110,122 +105,110 @@
       <span class="testimonial__author">– Juan Pérez</span>
     </div>
   </section>
-<!-- punto 10 -->
-  <footer>
-    <div class="layout">
-      <nav class="sidebar">
-        <span class="sidebar__heading">Navegación</span>
-        <a href="#" class="sidebar__item sidebar__item--active">
-          Inicio <span class="sidebar__item-icon">›</span>
-        </a>
-      
-        </a>
-        <a href="#" class="sidebar__item">
-          Servicios <span class="sidebar__item-icon">›</span>
-        </a>
-        <a href="#" class="sidebar__item">
-          Precios <span class="sidebar__item-icon">›</span>
-        </a>
-        <a href="#" class="sidebar__item">
-          Contacto <span class="sidebar__item-icon">›</span>
-        </a>
-      </nav>
-      <main class="sidebar-content">
-        <h2 class="sidebar-content__title">Bienvenido a nuestra plataforma</h2>
-        <p class="sidebar-content__text">
-          Usa la barra lateral para navegar entre las diferentes secciones del sitio.
-          Este layout usa Flexbox para mantener el sidebar fijo a la izquierda
-          mientras el contenido principal ocupa el espacio restante de forma fluida y responsiva.
-        </p>
-      </main>
+
+  <!-- Sidebar layout (punto 10) -->
+  <div class="layout">
+    <nav class="sidebar">
+      <span class="sidebar__heading">Navegación</span>
+      <a href="#" class="sidebar__item sidebar__item--active">Inicio <span class="sidebar__item-icon">›</span></a>
+      <a href="#" class="sidebar__item">Servicios <span class="sidebar__item-icon">›</span></a>
+      <a href="#" class="sidebar__item">Precios <span class="sidebar__item-icon">›</span></a>
+      <a href="#" class="sidebar__item">Contacto <span class="sidebar__item-icon">›</span></a>
+    </nav>
+    <main class="sidebar-content">
+      <h2 class="sidebar-content__title">Bienvenido a nuestra plataforma</h2>
+      <p class="sidebar-content__text">
+        Usa la barra lateral para navegar entre las diferentes secciones del sitio.
+        Este layout usa Flexbox para mantener el sidebar fijo a la izquierda
+        mientras el contenido principal ocupa el espacio restante de forma fluida y responsiva.
+      </p>
+    </main>
+  </div>
+
+  <!-- Pricing (punto 9) -->
+  <section class="pricing">
+    <h2 class="pricing__title">Nuestros Planes y Equipos</h2>
+    <div class="pricing__container">
+      <div class="pricing__card">
+        <div class="pricing__image-wrapper">
+          <img src="/imagenes/solhaugfoto-camera-5716510_1280.jpg" alt="Cámara Principiante" class="pricing__img">
+        </div>
+        <div class="pricing__info">
+          <span class="pricing__name">Kit Principiante</span>
+          <h3 class="pricing__cost">$299.00</h3>
+          <ul class="pricing__list">
+            <li class="pricing__item">Lente 18-55mm incluido</li>
+            <li class="pricing__item">Sensor APS-C 20MP</li>
+            <li class="pricing__item">Video Full HD</li>
+          </ul>
+          <a href="#" class="pricing__button">Seleccionar</a>
+        </div>
+      </div>
+
+      <div class="pricing__card pricing__card--featured">
+        <div class="pricing__image-wrapper">
+          <img src="/imagenes/high-angle-photo-camera-indoors-still-life.jpg" alt="Cámara Semi-Pro" class="pricing__img">
+        </div>
+        <div class="pricing__info">
+          <span class="pricing__badge">Más Vendido</span>
+          <span class="pricing__name">Pack Entusiasta</span>
+          <h3 class="pricing__cost">$599.00</h3>
+          <ul class="pricing__list">
+            <li class="pricing__item">Lente 35mm f/1.8</li>
+            <li class="pricing__item">Sensor Full Frame 24MP</li>
+            <li class="pricing__item">Video 4K Pro</li>
+          </ul>
+          <a href="#" class="pricing__button pricing__button--active">Seleccionar</a>
+        </div>
+      </div>
+
+      <div class="pricing__card">
+        <div class="pricing__image-wrapper">
+          <img src="/imagenes/jdblack-camera-5887970_1280.jpg" alt="Cámara Profesional" class="pricing__img">
+        </div>
+        <div class="pricing__info">
+          <span class="pricing__name">Cuerpo Profesional</span>
+          <h3 class="pricing__cost">$1,299.00</h3>
+          <ul class="pricing__list">
+            <li class="pricing__item">Solo Cuerpo (Magnesio)</li>
+            <li class="pricing__item">Sensor 45MP Alta Res</li>
+            <li class="pricing__item">Video 8K RAW</li>
+          </ul>
+          <a href="#" class="pricing__button">Seleccionar</a>
+        </div>
+      </div>
     </div>
-    <!-- punto 9 -->
-    <section class="pricing">       
-      <h2 class="pricing__title">Nuestros Planes y Equipos</h2>
-      <div class="pricing__container">
-    
-        <div class="pricing__card">
-          <div class="pricing__image-wrapper">
-            <img src="/imagenes/solhaugfoto-camera-5716510_1280.jpg" alt="Cámara Principiante" class="pricing__img">
-          </div>
-          <div class="pricing__info">
-            <span class="pricing__name">Kit Principiante</span>
-            <h3 class="pricing__cost">$299.00</h3>
-            <ul class="pricing__list">
-              <li class="pricing__item">Lente 18-55mm incluido</li>
-              <li class="pricing__item">Sensor APS-C 20MP</li>
-              <li class="pricing__item">Video Full HD</li>
-            </ul>
-            <a href="#" class="pricing__button">Seleccionar</a>
-          </div>
-        </div>
-    
-        <div class="pricing__card pricing__card--featured">
-          <div class="pricing__image-wrapper">
-            <img src="/imagenes/high-angle-photo-camera-indoors-still-life.jpg" alt="Cámara Semi-Pro" class="pricing__img">
-          </div>
-          <div class="pricing__info">
-            <span class="pricing__badge">Más Vendido</span>
-            <span class="pricing__name">Pack Entusiasta</span>
-            <h3 class="pricing__cost">$599.00</h3>
-            <ul class="pricing__list">
-              <li class="pricing__item">Lente 35mm f/1.8</li>
-              <li class="pricing__item">Sensor Full Frame 24MP</li>
-              <li class="pricing__item">Video 4K Pro</li>
-            </ul>
-            <a href="#" class="pricing__button pricing__button--active">Seleccionar</a>
-          </div>
-        </div>
-    
-        <div class="pricing__card">
-          <div class="pricing__image-wrapper">
-            <img src="/imagenes/jdblack-camera-5887970_1280.jpg" alt="Cámara Profesional" class="pricing__img">
-          </div>
-          <div class="pricing__info">
-            <span class="pricing__name">Cuerpo Profesional</span>
-            <h3 class="pricing__cost">$1,299.00</h3>
-            <ul class="pricing__list">
-              <li class="pricing__item">Solo Cuerpo (Magnesio)</li>
-              <li class="pricing__item">Sensor 45MP Alta Res</li>
-              <li class="pricing__item">Video 8K RAW</li>
-            </ul>
-            <a href="#" class="pricing__button">Seleccionar</a>
-          </div>
-        </div>
-    
-      </div>
-    </section>
-    <!-- punto 8 -->
-       <footer class="footer">
-      <div class="footer__column">
-        <span class="footer__logo">BrandLogo</span>
-        <p class="footer__tagline">Fotografía profesional para capturar los momentos que importan.</p>
-        <div class="footer__social">
-          <a href="#" class="footer__social-link">ig</a>
-          <a href="#" class="footer__social-link">tw</a>
-          <a href="#" class="footer__social-link">yt</a>
-        </div>
-      </div>
-      <div class="footer__column">
-        <span class="footer__heading">Navegación</span>
-        <nav class="footer__links">
-          <a href="#" class="footer__link">Inicio</a>
-          <a href="#" class="footer__link">Servicios</a>
-          <a href="#" class="footer__link">Proyectos</a>
-          <a href="#" class="footer__link">Precios</a>
-          <a href="#" class="footer__link">contacto</a>
-        </nav>
-      </div>
-      <div class="footer__column">
-        <span class="footer__heading">Contacto</span>
-        <p class="footer__text">📍 santander, Colombia</p>
-        <p class="footer__text">✉️ hola@brandlogo.com</p>
-        <p class="footer__text">📞 +57 89832938</p>
-      </div>
-    </footer>
-    <div class="footer__bottom">© derechos reservados a flexbox   </div>
+  </section>
 
+  <!-- Footer final -->
+  <footer class="footer">
+    <div class="footer__column">
+      <span class="footer__logo">BrandLogo</span>
+      <p class="footer__tagline">Fotografía profesional para capturar los momentos que importan.</p>
+      <div class="footer__social">
+        <a href="#" class="footer__social-link">ig</a>
+        <a href="#" class="footer__social-link">tw</a>
+        <a href="#" class="footer__social-link">yt</a>
+      </div>
+    </div>
+    <div class="footer__column">
+      <span class="footer__heading">Navegación</span>
+      <nav class="footer__links">
+        <a href="#" class="footer__link">Inicio</a>
+        <a href="#" class="footer__link">Servicios</a>
+        <a href="#" class="footer__link">Proyectos</a>
+        <a href="#" class="footer__link">Precios</a>
+        <a href="#" class="footer__link">Contacto</a>
+      </nav>
+    </div>
+    <div class="footer__column">
+      <span class="footer__heading">Contacto</span>
+      <p class="footer__text">📍 Santander, Colombia</p>
+      <p class="footer__text">✉️ hola@brandlogo.com</p>
+      <p class="footer__text">📞 +57 89832938</p>
+    </div>
+    <div class="footer__bottom">© derechos reservados a flexbox</div>
   </footer>
-</body>
 
+</body>
 </html>
